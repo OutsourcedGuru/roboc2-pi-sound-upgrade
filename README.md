@@ -121,7 +121,7 @@ Since things might change over time, note that most of the GCODE above is from m
 ### Create an OctoPrint plugin or Cura post-processing script
 Instead of manually inserting these codes, you could also create an OctoPrint plugin or a Cura (or similar) slicing program post-processing script to automatically insert GCODE for you.
 
-I may later add some guidance on this but for now, this would be concidered out-of-scope for this repository.
+I may later add some guidance on this but for now, this would be considered out-of-scope for this repository.
 
 ## Strategy for Assigning Custom OCTO Command Numbers
 It would be great if there were a centralized list of already-assigned OCTO custom GCODE numbers for different things but I'm not aware of any.
