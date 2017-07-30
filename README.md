@@ -85,7 +85,7 @@ Return to your computer's browser and open up the OctoPrint session from earlier
 1. Settings
 2. Plugins
 3. GCODE System Commands
-4. +
+4. Plus button
 5. G-CODE -> OCTO 801
 6. System -> /usr/bin/aplay -Dhw:0,0 ~/sounds/r2d2/1.wav
 
