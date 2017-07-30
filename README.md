@@ -77,7 +77,13 @@ The `alsamixer` program within alsa-utils is how you adjust the master volume le
 $ alsamixer
 ```
 
-Note the existing volume level in **dB gain** and then use your up/down cursor keys to adjust. Press the ESC key when you're done.
+Note the existing volume level in **dB gain** and then use your up/down cursor keys to adjust. Press the ESC key when you're done.  (I've got my dB gain set to 86, for what it's worth.)
+
+If you want to test things at this point, you should be able to run the following command to hear something.
+
+```
+$ aplay 6.wav
+```
 
 ### Add some OctoPrint custom GCODEs
 Return to your computer's browser and open up the OctoPrint session from earlier (or open it again with http://my-c2.local).
@@ -87,12 +93,15 @@ Return to your computer's browser and open up the OctoPrint session from earlier
 3. GCODE System Commands
 4. Plus button
 5. G-CODE -> OCTO 801
-6. System -> /usr/bin/aplay -Dhw:0,0 ~/sounds/r2d2/1.wav
+6. System -> /usr/bin/aplay /home/pi/sounds/r2d2/1.wav
 
 Add the remaining sounds by iteratively pressing the + button and adding OCTO 802 -> 2.wav, etc.
 
+### Restart OctoPrint
+From the top of the main menu, you'll want to restart OctoPrint for the plugin adjustments to be seen.
+
 ### Exercise a sound event from the OctoPrint interface
-Find the Printer Terminal section of the interface and enter `OCTO 801`.  You should hear the first sound event play from inside the chassis.
+Find the Printer Terminal section of the interface and enter `OCTO801`.  You should hear the first sound event play from inside the chassis.
 
 If the volume isn't loud enough, go back and adjust the master volume level using `alsamixer` again.
 
@@ -111,7 +120,11 @@ G1 Z10
 ; set back to absolute mode
 G90
 ; R2D2 whistle to get your attention
-OCTO 805
+OCTO805
+; Wait ten minutes (600 seconds)
+G4 S600
+; R2D2 random noise to get your attention
+OCTO801
 ```
 
 At this point, the job should be safely paused.  You could then use the Robo C2's LCD interface to perform the filament change wizard, clip any filament from the tip of the extruder, return to the Printer screen and press the Resume button.
