@@ -146,3 +146,8 @@ You can find the documentation for the `aplay` command on opensrc.org [here](htt
 
 ## Documentation for OctoPrint's GCODE System Commands Plugin
 You can find the documentation for the **GCODE System Commands** plugin on OctoPrint's website [here](http://plugins.octoprint.org/plugins/gcodesystemcommands/).  Note that it's probably best to give full paths for both `aplay` and the sound event file itself.
+
+|Donate||Cryptocurrency|
+|:-----:|---|:--------:|
+| ![eth-receive](https://user-images.githubusercontent.com/15971213/40564950-932d4d10-601f-11e8-90f0-459f8b32f01c.png) || ![btc-receive](https://user-images.githubusercontent.com/15971213/40564971-a2826002-601f-11e8-8d5e-eeb35ab53300.png) |
+|Ethereum||Bitcoin|
